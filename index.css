@@ -1,0 +1,120 @@
+body {
+    background: hsla(331, 82%, 72%, 1);
+
+    background: linear-gradient(135deg, hsla(331, 82%, 72%, 1) 6%, hsla(319, 84%, 36%, 1) 92%);
+
+    background: -moz-linear-gradient(135deg, hsla(331, 82%, 72%, 1) 6%, hsla(319, 84%, 36%, 1) 92%);
+
+    background: -webkit-linear-gradient(135deg, hsla(331, 82%, 72%, 1) 6%, hsla(319, 84%, 36%, 1) 92%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#F27EB6", endColorstr="#A80F78", GradientType=1);
+}
+
+#maindiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+
+}
+
+#div1 {
+    background-color: rgb(255, 157, 173);
+    width: 30%;
+    height: 22em;
+    text-align: center;
+    padding-top: 3%;
+    font-size: larger;
+}
+
+#div2 {
+    background-color: rgb(251, 118, 140);
+    width: 30%;
+    height: 22em;
+    text-align: center;
+    padding-top: 3%;
+    font-size: larger;
+}
+
+#innerdiv1 {
+    background-color: rgb(183, 51, 73);
+    width: 8em;
+    margin-left: 125px;
+    margin-top: 100px;
+    color: white;
+}
+
+#innerdiv2 {
+    background-color: rgb(183, 51, 73);
+    width: 8em;
+    margin-left: 125px;
+    margin-top: 100px;
+    color: white;
+}
+
+#newgame {
+    position: absolute;
+    top: 120px;
+    left: 620px;
+    border-radius: 50px;
+    font-size: 15px;
+    border: 0px solid white;
+    padding: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#roll {
+    position: absolute;
+    top: 400px;
+    left: 625px;
+    border-radius: 50px;
+    font-size: 15px;
+    border: 0px solid white;
+    padding: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#hold {
+    position: absolute;
+    top: 470px;
+    left: 645px;
+    border-radius: 50px;
+    font-size: 15px;
+    border: 0px solid white;
+    padding: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#div1h2 {
+    color: rgb(185, 32, 58);
+}
+
+#div2h2 {
+    color: rgb(185, 32, 58);
+}
+
+#dice {
+    background-color: white;
+    height: 85px;
+    width: 90px;
+    font-size: larger;
+    position: absolute;
+    top: 250px;
+    left: 640px;
+}
+
+#n1,
+#n2,
+#n3,
+#n4,
+#n5,
+#n6,
+#n7,
+#n8,
+#n9 {
+    visibility: hidden;
+}

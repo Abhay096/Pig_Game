@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="maindiv">
+        <div id="div1">
+            <h1 id="div1h1">PLAYER 1</h1>
+            <h1 id="div1h2">0</h1>
+            <div id="innerdiv1">
+                <h3 id="innerdiv1h1">CURRENT</h3>
+                <h3 id="innerdiv1h2">0</h3>
+            </div>
+        </div>
+        <div id="div2">
+            <h1 id="div2h1">PLAYER 2</h1>
+            <h1 id="div2h2">0</h1>
+            <div id="innerdiv2">
+                <h3 id="innerdiv2h1">CURRENT</h3>
+                <h3 id="innerdiv2h2">0</h3>
+            </div>
+        </div>
+        <button id="newgame" onclick="f3()">🔄NEW GAME</button>
+        <div id="dice">
+            <span id="n1">🔴</span>
+            <span id="n2">🔴</span>
+            <span id="n3">🔴</span>
+            <br>
+            <span id="n4">🔴</span>
+            <span id="n5">🔴</span>
+            <span id="n6">🔴</span>
+            <br>
+            <span id="n7">🔴</span>
+            <span id="n8">🔴</span>
+            <span id="n9">🔴</span>
+        </div>
+        <button id="roll" onclick="f1()">🎲ROLL DICE</button>
+        <button id="hold" onclick="f2()">✋🏻HOLD</button>
+    </div>
+    <div style="position: absolute; top: 0%; left: 530px; visibility: hidden; font-size: 50px; color: white;" id="win">
+        Player 1
+        Wins🎉
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
