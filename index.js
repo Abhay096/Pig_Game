@@ -30,8 +30,8 @@ let innerdiv2h2 = document.getElementById('innerdiv2h2') //targeting the heading
 //Extra Variable Declaration
 let chance = 1 //declaring and initializing the chance variable to 1 to switch between the players
 let overall = 80; //Total score to achive in order to win game
-let p1 = prompt("Enter your name player 1"); //Asking the name of player 1
-let p2 = prompt("Enter your name player 2"); //Asking the name of player 2
+// let p1 = prompt("Enter your name player 1"); //Asking the name of player 1
+// let p2 = prompt("Enter your name player 2"); //Asking the name of player 2
 let div1h1 = document.getElementById('div1h1').innerHTML = `Player 1 <br> ${p1}` //Display the name of player 1 on screen
 let div2h1 = document.getElementById('div2h1').innerHTML = `Player 2 <br> ${p2}` //Display the name of player 2 on screen
 

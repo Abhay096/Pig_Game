@@ -15,48 +15,42 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 95vh;
-
+    height: 39rem;
 }
 
 #div1 {
     background-color: rgb(255, 157, 173);
-    width: 30%;
-    height: 22em;
+    width: 25rem;
+    height: 26.4rem;
     text-align: center;
-    padding-top: 3%;
-    font-size: larger;
+    padding-top: 2rem;
+    font-size: 1.2rem;
 }
 
 #div2 {
     background-color: rgb(251, 118, 140);
-    width: 30%;
-    height: 22em;
+    width: 25rem;
+    height: 26.4rem;
     text-align: center;
-    padding-top: 3%;
-    font-size: larger;
+    padding-top: 2rem;
+    font-size: 1.2rem;
 }
 
 #innerdiv1 {
     background-color: rgb(183, 51, 73);
-    width: 8em;
-    margin-left: 125px;
-    margin-top: 100px;
+    width: auto;
     color: white;
+    padding: 0.2rem 1rem;
 }
 
 #innerdiv2 {
     background-color: rgb(183, 51, 73);
-    width: 8em;
-    margin-left: 125px;
-    margin-top: 100px;
+    width: auto;
     color: white;
+    padding: 0.2rem 1rem;
 }
 
 #newgame {
-    position: absolute;
-    top: 120px;
-    left: 620px;
     border-radius: 50px;
     font-size: 15px;
     border: 0px solid white;
@@ -66,9 +60,7 @@ body {
 }
 
 #roll {
-    position: absolute;
-    top: 400px;
-    left: 625px;
+
     border-radius: 50px;
     font-size: 15px;
     border: 0px solid white;
@@ -78,9 +70,7 @@ body {
 }
 
 #hold {
-    position: absolute;
-    top: 470px;
-    left: 645px;
+
     border-radius: 50px;
     font-size: 15px;
     border: 0px solid white;
@@ -99,12 +89,22 @@ body {
 
 #dice {
     background-color: white;
-    height: 85px;
-    width: 90px;
+    height: 6rem;
+    width: 6rem;
     font-size: larger;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#dice span {
+    background-color: red;
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
     position: absolute;
-    top: 250px;
-    left: 640px;
 }
 
 #n1,
@@ -117,4 +117,354 @@ body {
 #n8,
 #n9 {
     visibility: hidden;
+}
+
+#n1 {
+    top: 10%;
+    left: 10%;
+}
+
+#n2 {
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#n3 {
+    top: 10%;
+    right: 10%;
+}
+
+#n4 {
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+#n5 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#n6 {
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+}
+
+#n7 {
+    bottom: 10%;
+    left: 10%;
+}
+
+#n8 {
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#n9 {
+    bottom: 10%;
+    right: 10%;
+}
+
+.current {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 120px;
+    width: 100%;
+}
+
+#diceContainer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 15rem;
+    width: 100%;
+}
+
+#rollContainer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 23rem;
+    width: 100%;
+}
+
+#holdContainer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 29rem;
+    width: 100%;
+}
+
+#win {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3vw;
+    /* Adjust font size responsively */
+    color: white;
+    z-index: 1;
+    visibility: hidden;
+    /* Ensure it appears above other elements */
+}
+
+@media (min-width: 659px) and (max-width: 768px) {
+    #div1 {
+        width: 20rem;
+        height: 24.4rem;
+    }
+
+    #div2 {
+        width: 20rem;
+        height: 24.4rem;
+    }
+
+    #buttonContainer {
+        top: 144px;
+    }
+
+    #holdContainer {
+        top: 27rem;
+    }
+
+    #dice {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    #dice span {
+        height: 0.8rem;
+        width: 0.8rem;
+    }
+
+    #win {
+        font-size: 5vw;
+        /* Adjust font size for smaller screens */
+    }
+}
+
+@media (min-width: 497px) and (max-width: 659px) {
+    #div1 {
+        width: 15rem;
+        height: 21.4rem;
+    }
+
+    #div2 {
+        width: 15rem;
+        height: 21.4rem;
+    }
+
+    #newgame {
+        font-size: 0.6rem;
+    }
+
+    #buttonContainer {
+        top: 158px;
+    }
+
+    #dice {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    #roll {
+        font-size: 10px;
+    }
+
+    #hold {
+        font-size: 10px;
+    }
+
+    #holdContainer {
+        top: 27rem;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 497px) {
+    #div1 {
+        width: 12rem;
+        height: 17.4rem;
+    }
+
+    #div2 {
+        width: 12rem;
+        height: 17.4rem;
+    }
+
+    #newgame {
+        font-size: 7px;
+    }
+
+    #dice {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    #buttonContainer {
+        top: 187px;
+    }
+
+    #diceContainer {
+        top: 17rem;
+    }
+
+    #roll {
+        font-size: 10px;
+    }
+
+    #hold {
+        font-size: 10px;
+    }
+
+    #holdContainer {
+        top: 26rem;
+    }
+
+    .current {
+        height: 8rem;
+    }
+
+    #innerdiv1h1,
+    #innerdiv1h2,
+    #innerdiv2h1,
+    #innerdiv2h2 {
+        font-size: 1rem;
+    }
+
+    #dice {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    #dice span {
+        height: 0.6rem;
+        width: 0.6rem;
+    }
+
+    #win {
+        font-size: 6vw;
+        /* Adjust font size for smaller screens */
+    }
+}
+
+@media (min-width: 400px) and (max-width: 424px) {
+    #div1 {
+        width: 12rem;
+        height: 17.4rem;
+    }
+
+    #div2 {
+        width: 12rem;
+        height: 17.4rem;
+    }
+
+    #newgame {
+        font-size: 7px;
+    }
+
+    #dice {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    #buttonContainer {
+        top: 187px;
+    }
+
+    #diceContainer {
+        top: 17rem;
+    }
+
+    #roll {
+        font-size: 10px;
+    }
+
+    #hold {
+        font-size: 10px;
+    }
+
+    #holdContainer {
+        top: 26rem;
+    }
+
+    .current {
+        height: 8rem;
+    }
+
+    #innerdiv1h1,
+    #innerdiv1h2,
+    #innerdiv2h1,
+    #innerdiv2h2 {
+        font-size: 1rem;
+    }
+
+    #win {
+        font-size: 6vw;
+        /* Adjust font size for even smaller screens */
+    }
+}
+
+@media (min-width: 320px) and (max-width: 399px) {
+    #div1 {
+        width: 10rem;
+        height: 17.4rem;
+    }
+
+    #div2 {
+        width: 10rem;
+        height: 17.4rem;
+    }
+
+    #newgame {
+        font-size: 7px;
+    }
+
+    #dice {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    #buttonContainer {
+        top: 187px;
+    }
+
+    #diceContainer {
+        top: 17rem;
+    }
+
+    #roll {
+        font-size: 10px;
+    }
+
+    #hold {
+        font-size: 10px;
+    }
+
+    #holdContainer {
+        top: 26rem;
+    }
+
+    .current {
+        height: 10.8rem;
+    }
+
+    #innerdiv1h1,
+    #innerdiv1h2,
+    #innerdiv2h1,
+    #innerdiv2h2 {
+        font-size: 0.8rem;
+    }
 }
